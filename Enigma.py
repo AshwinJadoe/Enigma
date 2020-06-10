@@ -6,3 +6,5 @@ class enigma():
     def __init__(self, RotSet, Tekst):
 
     pass
+
+enigma("001", "test")
