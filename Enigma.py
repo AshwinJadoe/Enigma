@@ -5,9 +5,10 @@ class Enigma():
         self.Rotset1 = Rotset1
         self.Rotset2 = Rotset2
         self.Rotset3 = Rotset3
-        self.Rot1 = "abcdefghijklmnopqrstuvwxyz"
-        self.Rot2 = "abcdefghijklmnopqrstuvwxyz"
-        self.Rot3 = "abcdefghijklmnopqrstuvwxyz"        
+       
+        self.Rot1 = "ekmflgdqvzntowyhxuspaibrcj"
+        self.Rot2 = "ajdksiruxblhwtmcqgznpyfvoe"
+        self.Rot3 = "fvpjiaoyedrzxwgctkuqsbnmhl"        
         
 
     def Rotset(self):
