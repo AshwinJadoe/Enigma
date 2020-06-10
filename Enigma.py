@@ -1,10 +1,21 @@
-class enigma():
-    Rot1 = "abcdefghijklmnopqrstuvwxyz"
-    Rot2 = "abcdefghijklmnopqrstuvwxyz"
-    Rot3 = "abcdefghijklmnopqrstuvwxyz"
+class Enigma():
 
-    def __init__(self, RotSet, Tekst):
 
-    pass
+    def __init__(self, Rotset):
+        self.Rotset = Rotset
+        self.Rot1 = "abcdefghijklmnopqrstuvwxyz"
+        self.Rot2 = "abcdefghijklmnopqrstuvwxyz"
+        self.Rot3 = "abcdefghijklmnopqrstuvwxyz"        
+        
 
-enigma("001", "test")
+    def Rotdraaien(self):
+        set= self.Rotset
+        print(set)
+        Rot1 =self.Rot1[set:26] + self.Rot1[0: set]
+        return Rot1
+
+
+enigma = Enigma(4)
+
+print(Enigma.Rotdraaien(enigma))
+
